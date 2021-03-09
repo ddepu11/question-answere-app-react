@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
 
 /*Utility class*/
 .flex {
@@ -17,7 +17,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 body {
   min-height: 100vh;
@@ -37,6 +37,8 @@ body {
     #5f5ffb
   );
   color: black;
+  padding: 20px 15px;
+  transition: all 0.5s ease-out;
 }
 .container {
   max-width: 960px;
@@ -62,7 +64,7 @@ button:focus {
 }
 .container {
   display: grid;
-  grid-template-columns: repeat(3, minmax(100px, auto));
+  grid-template-columns: repeat(3, minmax(50px, auto));
   grid-auto-rows: auto;
   padding: 40px 30px 40px;
   border-radius: 5px;
@@ -79,11 +81,18 @@ main {
 }
 .card {
   margin-bottom: 25px;
-  padding: 25px 20px;
+  padding: 15px 20px;
 }
 .answere {
   height: 0;
   overflow: hidden;
+  transition: height 0.5s ease-out;
+  margin-top: 15px;
+}
+.answere p {
+  letter-spacing: 1px;
+  line-height: 1.4;
+  color: #333;
 }
 aside h1 {
   letter-spacing: 3px;
@@ -97,4 +106,31 @@ i {
   padding: 10px;
   cursor: pointer;
   border-radius: 50%;
+}
+
+@media (max-width: 620px) {
+  .container {
+    padding: 30px 25px 30px;
+    border-radius: 5px;
+    gap: 25px;
+  }
+  aside {
+    grid-column: 1/4;
+  }
+  main {
+    grid-column: 1/4;
+    grid-row: 2/3;
+  }
+  aside h1 {
+    letter-spacing: 2px;
+    line-height: 1.1;
+    font-size: 1.3em;
+  }
+  .question h3 {
+    font-size: 1em;
+  }
+  .answere p {
+    letter-spacing: 0.8px;
+    line-height: 1.3;
+  }
 }
