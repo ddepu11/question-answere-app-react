@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*Utility class*/
+.flex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.card {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background: white;
+  border-radius: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to right top,
+    #2b9642,
+    #4fa54d,
+    #6cb458,
+    #87c465,
+    #a2d372,
+    #84d77e,
+    #5dd98f,
+    #00dba3,
+    #00cad3,
+    #00b3ff,
+    #0093ff,
+    #5f5ffb
+  );
+  color: black;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  background: white;
+}
+img {
+  width: 100%;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+button:focus {
+  outline: 0;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, auto));
+  grid-auto-rows: auto;
+  padding: 40px 30px 40px;
+  border-radius: 5px;
+  gap: 38px;
+}
+aside {
+  grid-column: 1/2;
+}
+main {
+  grid-column: 2/4;
+}
+.question {
+  justify-content: space-between;
+}
+.card {
+  margin-bottom: 25px;
+  padding: 25px 20px;
+}
+.answere {
+  height: 0;
+  overflow: hidden;
+}
+aside h1 {
+  letter-spacing: 3px;
+  line-height: 1.3;
+  color: #222;
+  font-size: 1.6em;
+}
+i {
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background: #948f8f;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
 }
