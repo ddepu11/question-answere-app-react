@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/question-answere-app-react/static/css/main.ac2dadfa.chunk.css",
+    "main.js": "/question-answere-app-react/static/js/main.2e67a6aa.chunk.js",
+    "main.js.map": "/question-answere-app-react/static/js/main.2e67a6aa.chunk.js.map",
+    "runtime-main.js": "/question-answere-app-react/static/js/runtime-main.e0e0dbfb.js",
+    "runtime-main.js.map": "/question-answere-app-react/static/js/runtime-main.e0e0dbfb.js.map",
+    "static/js/2.335171a8.chunk.js": "/question-answere-app-react/static/js/2.335171a8.chunk.js",
+    "static/js/2.335171a8.chunk.js.map": "/question-answere-app-react/static/js/2.335171a8.chunk.js.map",
+    "index.html": "/question-answere-app-react/index.html",
+    "static/css/main.ac2dadfa.chunk.css.map": "/question-answere-app-react/static/css/main.ac2dadfa.chunk.css.map",
+    "static/js/2.335171a8.chunk.js.LICENSE.txt": "/question-answere-app-react/static/js/2.335171a8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e0e0dbfb.js",
+    "static/js/2.335171a8.chunk.js",
+    "static/css/main.ac2dadfa.chunk.css",
+    "static/js/main.2e67a6aa.chunk.js"
+  ]
+}
